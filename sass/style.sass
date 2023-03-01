@@ -6,6 +6,22 @@
 html
     font-size: 10px
 
+$color-gray: #777777
+$color-gray-light: #FAFAFA
+$color-white: #ffffff
+$color-black: #000000
+$color-brown: #BA8554
+$color-beown-dark: #A14F03
+
+@mixin btn-style($color)
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 2rem
+    padding: 1.5rem 4rem
+    background: $color-white
+    color: $color
+    
+
 @keyframes LeftToRight
     0%
         opacity: 0
@@ -48,10 +64,10 @@ body
     font-size: 1.6rem
     letter-spacing: .2rem
     padding: 5rem
-    background-color: white
+    background-color: $color-white
 
 .container
-    background-color: #F7F7F7
+    background-color: $color-gray-light
 
 .header
     position: relative
@@ -73,7 +89,7 @@ body
         text-align: center
 
 .title-first
-    color: #FFFFFF
+    color: $color-white
     &__main
         display: block
         font-weight: 800
@@ -102,13 +118,7 @@ body
 
 .btn
     &:link, &:visited
-        text-transform: uppercase
-        text-decoration: none
-        font-size: 2rem
-        color: white
-        padding: 1.5rem 4rem
-        background: white
-        color: #777777
+        @include btn-style($color-gray)
         border-radius: 5rem
         display: inline-block
         transition: all .3s   
@@ -124,7 +134,7 @@ body
         box-shadow:(0rem .4rem .4rem rgba(0, 0, 0, 0.1))
     &::after
         content: ""
-        background:  white
+        background:  $color-white
         width: 100%
         height: 100%
         border-radius: 5rem
@@ -137,5 +147,4 @@ body
     &_animated
         animation: BtnToUp .7s ease-out 1s
         animation-fill-mode: backwards
-
 
