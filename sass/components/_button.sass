@@ -2,7 +2,7 @@
 //This is the button component
 
 .btn
-    &:link, &:visited
+    &, &:link, &:visited
         @include style-link($color-gray)
         font-size: 2rem
         padding: 1.5rem 4rem
@@ -10,6 +10,7 @@
         border-radius: 5rem
         transition: all .3s   
         position: relative  
+        border: none
     &:hover           
         transform: translateY(-.4rem)
         box-shadow:(0rem .4rem .4rem rgba(0, 0, 0, 0.3))
@@ -36,3 +37,13 @@
         animation-fill-mode: backwards
     &_shadow
         box-shadow: $shadow
+
+.btn_brown
+    &, &:link, &:visited
+        background: $color-brown-dark
+        color: $color-white
+        box-shadow: $shadow
+    &:hover           
+    &::after
+        background: $color-brown-dark
+         
