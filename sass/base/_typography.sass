@@ -21,6 +21,8 @@ body
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
     &__secondary
         display: block
         font-weight: 100
@@ -33,6 +35,9 @@ body
         animation-timing-function: ease
         backface-visibility: hidden
         margin-bottom: 5rem
+        @include respond(tab-land)
+            font-size: 3rem
+            margin-bottom: 2rem
 
 .title-secondary
     text-align: center
@@ -50,15 +55,23 @@ body
         text-shadow: 0rem .4rem .4rem rgba($color-black, .25)
     &_white
         color: $color-white
+    &_left
+        text-align: left
+    @include respond(tab-land)
+        font-size: 2.8rem
 
 .title-third
     font-weight: 700
     font-size: $font-size-paragraph-h3
     letter-spacing: .2rem
     text-transform: uppercase
+    @include respond(tab-land)
+        font-size: 1.7rem
 
 .paragraph
     font-weight: 400
     font-size: $font-size-paragraph
     letter-spacing: .2rem
     line-height: 140%
+    @include respond(tab-land)
+        font-size: 1.4rem
