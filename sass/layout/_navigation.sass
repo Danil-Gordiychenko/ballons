@@ -12,6 +12,11 @@
         z-index: 200
         text-align: center
         cursor: pointer
+        box-shadow: $shadow
+        @include respond(tab-port)
+            right: 8rem
+            top: 8rem
+
     &__background
         width: 5rem
         height: 5rem
@@ -22,6 +27,9 @@
         top: 11rem
         z-index: 100
         transition: all .7s ease-out
+        @include respond(tab-port)
+            right: 9rem
+            top: 9rem
     &__nav
         height: 100vh
         width: 100%
