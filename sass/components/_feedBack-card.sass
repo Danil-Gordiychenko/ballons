@@ -21,6 +21,15 @@
             height: 100%
             transform: scale(1.2)
             transition: all .4s
+        @include respond(tab-port)
+            float: none
+            margin: 0 auto
+            margin-bottom: 3rem
+    @include respond(tab-port)
+        padding: 3rem
+    &__box
+        @include respond(tab-port)
+        text-align: center
     &__name
         position: absolute
         top: 50%

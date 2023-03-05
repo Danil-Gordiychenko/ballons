@@ -24,7 +24,7 @@ body
         @include respond(tab-land)
             font-size: 4rem
         @include respond(tab-port)
-            font-size: 3.6rem
+            font-size: 3.9rem
             letter-spacing: .4rem
             margin-bottom: .4rem
     &__secondary
@@ -46,8 +46,6 @@ body
             font-size: 3rem
             letter-spacing: .3rem
             margin-bottom: 5rem
-        @include respond(tab-port)
-            letter-spacing: 1rem
 
 .title-secondary
     text-align: center
@@ -67,8 +65,12 @@ body
         color: $color-white
     &_left
         text-align: left
+        @include respond(tab-port)
+            text-align: center
     @include respond(tab-land)
         font-size: 2.8rem
+    @include respond(tab-port)
+        letter-spacing: .8rem
 
 .title-third
     font-weight: 700

@@ -4,6 +4,8 @@
     box-shadow: $shadow
     border-radius: .5rem
     overflow: hidden
+    @include respond(tab-port)
+        background: rgba(255,255,255,0.9)
 
 .form
     width: 70%
@@ -18,6 +20,12 @@
             margin-bottom: 0rem
         &__group:nth-child(4)
             margin-bottom: 2rem
+        &__group:nth-child(4)
+            margin-bottom: 4rem
+    @include respond(tab-port)
+        width: 100%
+        padding-left: 0rem
+        text-align: center
 
     &__label
         font-size: 1.6rem
@@ -45,6 +53,9 @@
             box-shadow: $shadow
         &:focus:invalid
             border-bottom: .3rem solid #D76363
+        @include respond(tab-port)
+            width: 90% 
+        
 
     &__input:placeholder-shown + &__label
         opacity: 0
@@ -59,6 +70,9 @@
             display: block
             &:not(:last-child)
                 margin-bottom: 2rem
+        @include respond(tab-port)
+            text-align: left
+            margin-left: 5%
     &__input-radio
         display: none
     &__label-radio
