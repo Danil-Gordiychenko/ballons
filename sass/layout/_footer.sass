@@ -37,6 +37,9 @@
         &:hover
             transform: rotate(5deg) scale(1.2)
             color: $color-brown-dark
+        @include respond(phone)
+            &:link, &:visited
+                font-size: 1.9rem
 
 
     

@@ -5,6 +5,8 @@
         margin-bottom: 4rem
     @include respond(tab-port)
         min-height: 104rem
+    @include respond(phone)
+        margin-bottom: 9rem
 
 .third-section-box
     background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%), url(../img/third-section-backgroung.png) center / cover no-repeat
@@ -27,3 +29,5 @@
 .section-book
     padding: 10rem
     background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
+    @include respond(tab-port)
+        padding: 7rem

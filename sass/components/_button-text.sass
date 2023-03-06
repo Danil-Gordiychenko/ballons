@@ -18,3 +18,7 @@
         transform: translateY(-.2rem)
     &:active
         transform: translateY(0rem)
+    
+    @include respond(phone)
+        &:link, &:visited
+            font-size: 1.9rem
