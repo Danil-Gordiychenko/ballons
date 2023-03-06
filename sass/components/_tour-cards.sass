@@ -25,7 +25,7 @@
         &__side
             height: 52rem
 
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover:none)
         height: auto
         box-shadow: $shadow
         &__side
@@ -45,7 +45,7 @@
         transform: rotateY(-180deg)
     &:hover &__side_back
         transform: rotateY(0deg)
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover:none)
         &:hover &__side_front
             transform: rotateY(0deg)
 
@@ -60,7 +60,7 @@
             background: $color-brown url(../img/card-tour-2.jpg) center / cover no-repeat
         &_3
             background: $color-brown url(../img/card-tour-3.jpg) center / cover no-repeat
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             height: 30rem
             margin-bottom: 6rem
     &__title
@@ -72,7 +72,7 @@
         position: absolute
         top: 17rem
         right: 0rem
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             top: 26rem
             font-size: 3.5rem
     &__span
@@ -84,7 +84,7 @@
             top: 3.5rem
             right: 0
             padding-bottom: 1rem
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 top: 3.7rem
     &__descr
         ul
@@ -100,7 +100,7 @@
                 &:not(:last-child)
                     margin-bottom: 2rem
 
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
              ul
                 width: 50% 
                 li
@@ -114,7 +114,7 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             position: relative
             top: 0%
             left: 0%
@@ -130,15 +130,15 @@
         &_1
             font-weight: 300
             font-size: 2rem
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 font-size: 3rem
         &_2
             font-weight: 500
             font-size: 6rem
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 font-size: 9rem
 
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             margin-bottom: 3rem
 
                 

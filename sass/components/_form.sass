@@ -6,6 +6,10 @@
     overflow: hidden
     @include respond(tab-port)
         background: rgba(255,255,255,0.9)
+    
+    @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(105deg, rgba(255,255,255,0.9) 55%, rgba(186,133,84,0.3) 55%, rgba(161,79,3,0.3) 100%),  url(../img/pexels-taryn-elliott-big.jpg) center / cover no-repeat 
+
 
 .form
     width: 70%
