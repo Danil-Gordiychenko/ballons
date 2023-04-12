@@ -1,0 +1,1 @@
+In this example, I wanted to show my knowledge and layout skills. Most of the layout technologies that can be encountered when working with real projects are used here. It uses the bam methodology (block element modifier), sass preprocessor, semantic layout, and also has the correct folder structure.
